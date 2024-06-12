@@ -1,0 +1,75 @@
+.sl-wrapper{
+    background-color: rgba(255, 189, 211, 0.2);
+    min-height: 50dvh;
+    min-width: 100%;
+    text-align: center;
+    padding: 30px 30px;
+    background-image: url("https://img.freepik.com/free-vector/beautiful-floral-background-with-copy-space_23-2149064297.jpg?w=996&t=st=1709350706~exp=1709351306~hmac=d6fcc0a25b0730c1506805f8ec69c0c003057561f3893a2f5ce79728eaa93704");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+.sl-wrapper h1, .sl-wrapper p{
+    color: rgba(246, 99, 148, 1);
+    transform: translateY(25px);
+}
+
+.sl-wrapper h1{
+    font-family: 'Alex Brush',cursive;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.sl-user-boxes{
+    display: flex;
+    margin-block: 20px;
+    padding: 30px 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sl-user-box{
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    transition: all .125s ease;
+    margin: 20px;
+}
+
+.sl-user-box:hover{
+    transform: scale(1.4);
+    transition: all .125s ease;
+    transition-delay: 0.1s;
+}
+
+.sl-user-box img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.rating{
+    width: 50px;
+    height: 50px;
+}
+.rating img {
+    transition: all .250s ease;
+    padding: 2px;
+}
+.rating:hover img{
+    transition: all .250s ease;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+    .sl-user-box{
+        width: 30%;
+    }
+
+    .sl-wrapper{
+        background-repeat: repeat !important;
+        background-size: contain !important;
+    }
+}

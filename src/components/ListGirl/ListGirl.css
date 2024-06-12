@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+.girl-item {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+
+.girl-item-img{
+    /*width: 300px;*/
+    /*height: 500px;*/
+    width: 30%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.girl-item-img:hover{
+    /*animation: img-animation 2s infinite alternate;*/
+    animation-delay: 0.2s;
+}
+
+.girl-item-img img{
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    border-radius: inherit;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.girl-item-info{
+    width: 70%;
+    font-family: 'Pacifico',cursive !important;
+}
+.girl-item-info h1{
+    margin-bottom: 10px;
+}
+
+@keyframes img-animation {
+    0%{
+        transform: translateX(100px) rotate(60deg);
+
+    }
+    20%{
+        transform: translateX(200px) rotate(120deg);
+
+    }40%{
+        transform: translateX(300px) rotate(180deg);
+
+    }60%{
+        transform: translateX(400px) rotate(220deg);
+
+    }80%{
+        transform: translateX(500px) rotate(260deg);
+
+    }100%{
+        transform: translateX(300px) rotate(360deg);
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .girl-item-img, .girl-item-info {
+        width: 100% !important;
+    }
+}

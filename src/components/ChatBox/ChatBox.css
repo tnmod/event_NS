@@ -1,0 +1,50 @@
+.chatBox{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.chatContent{
+    height: 360px;
+    overflow: auto;
+}
+
+.chatItem{
+    padding: 0 10px;
+}
+
+.chatFooter{
+    padding-inline: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chatBox input{
+    color: #171717 !important ;
+}
+
+.right-dir{
+    direction: rtl;
+}
+
+.msg-content{
+    max-width: 100% !important;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.right-dir p{
+    background: #FFD0EC !important;
+}
+
+.chatCollapse:hover{
+    transition: all .25s ease;
+    cursor: pointer;
+    background: rgba(181, 192, 208, 0.85) !important;
+}

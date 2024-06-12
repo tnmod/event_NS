@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@100..900&display=swap');
+.header-container{
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    background: url("../../assets/Rectangle 9.png") no-repeat center top;
+    gap: 10px;
+}
+.header-logo{
+    position: absolute;
+    top: 20px;
+    margin-bottom: 30px;
+}
+.logo-image{
+    margin: 0 auto;
+    object-fit: contain;
+    width: 150px;
+}
+.header-btn{
+    width: 180px;
+    height: 40px;
+    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+    transition: all 0.5s;
+}
+.header-btn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.title{
+    font-size: 50px;
+    font-family: "Alex Brush", cursive;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title span{
+    line-height: 50px;
+}
+.des{
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    margin: 30px 0;
+}
+/*.header-content{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+@media screen and (max-width: 1000px)      {
+    .header-container{
+        height: 350px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .des{
+        font-size: 14px;
+    }
+    .header-btn{
+        width: 150px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 700px)      {
+    .header-container{
+        height: 300px;
+    }
+    .title{
+        font-size: 20px;
+
+    }
+    .title span{
+        line-height: 15px;
+    }
+    .des{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .header-btn{
+        width: 100px;
+        font-size: 10px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 500px)      {
+    .header-container{
+        height: 250px;
+    }
+    .title{
+        font-size: 17px;
+    }
+    .title span{
+        line-height: 15px;
+    }
+    .des{
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .header-btn{
+        width: 100px;
+        font-size: 10px;
+        height: 20px;
+    }
+    .content-wrapper{
+        margin-bottom: 20px;
+    }
+    .logo-image{
+        width: 100px;
+    }
+}
+
+input{
+    color: #B5C0D0 !important;
+}
+
+ ::placeholder{
+    color:rgba(199, 200, 204, 0.71) !important
+}
+
+.header-button {
+    position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .6em 1.8em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+}
+
+.header-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.header-button::after {
+    background-color: #fff;
+}
+
+.header-button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
